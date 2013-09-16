@@ -6,4 +6,4 @@ core = 7.x
 
 projects[registration][type] = "module"
 projects[registration][subdir]="contrib"
-projects[registration][type] = "1.2"
+projects[registration][version] = "1.2"
