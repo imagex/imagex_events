@@ -74,3 +74,4 @@ features_exclude[field][node-event-field_offsite_url] = node-event-field_offsite
 features_exclude[field][node-event-field_date] = node-event-field_date
 features_exclude[field][node-event-field_groups] = node-event-field_groups
 features_exclude[field][node-event-field_file_attachment] = node-event-field_file_attachment
+features_exclude[dependencies][imagex_blog] = imagex_blog

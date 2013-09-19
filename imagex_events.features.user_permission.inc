@@ -15,7 +15,7 @@ function imagex_events_user_default_permissions() {
     'name' => 'delete any event content',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
   );
@@ -25,7 +25,7 @@ function imagex_events_user_default_permissions() {
     'name' => 'delete own event content',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
   );
@@ -35,9 +35,9 @@ function imagex_events_user_default_permissions() {
     'name' => 'edit any event content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
       'Content Creator' => 'Content Creator',
       'Content Manager' => 'Content Manager',
-      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function imagex_events_user_default_permissions() {
     'name' => 'edit own event content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
       'Content Creator' => 'Content Creator',
       'Content Manager' => 'Content Manager',
-      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
