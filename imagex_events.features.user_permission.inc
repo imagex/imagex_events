@@ -50,6 +50,7 @@ function imagex_events_user_default_permissions() {
       'Content Administrator' => 'Content Administrator',
       'Content Creator' => 'Content Creator',
       'Content Manager' => 'Content Manager',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
