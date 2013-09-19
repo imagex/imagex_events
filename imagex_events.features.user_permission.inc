@@ -10,6 +10,20 @@
 function imagex_events_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: create event content.
+  $permissions['create event content'] = array(
+    'name' => 'create event content',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
+      'Content Creator' => 'Content Creator',
+      'Content Manager' => 'Content Manager',
+      'Content Moderator' => 'Content Moderator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: delete any event content.
   $permissions['delete any event content'] = array(
     'name' => 'delete any event content',
