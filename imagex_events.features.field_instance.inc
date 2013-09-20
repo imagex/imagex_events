@@ -183,48 +183,6 @@ function imagex_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_file_attachment'
-  $field_instances['node-event-field_file_attachment'] = array(
-    'bundle' => 'event',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 14,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_file_attachment',
-    'label' => 'File Attachment',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'txt',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'file',
-      'settings' => array(
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'file_generic',
-      'weight' => 17,
-    ),
-  );
-
   // Exported field_instance: 'node-event-field_location'
   $field_instances['node-event-field_location'] = array(
     'bundle' => 'event',
@@ -562,7 +520,6 @@ function imagex_events_field_default_field_instances() {
   t('Date');
   t('Description');
   t('Event Logo');
-  t('File Attachment');
   t('Location');
   t('Maximum number of attendees');
   t('Registration');
