@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ImageX Events Registration feature.
+ */
+
+include_once 'imagex_events_registration.features.inc';
