@@ -65,7 +65,7 @@ function imagex_events_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -181,6 +181,61 @@ function imagex_events_field_default_field_instances() {
       'type' => 'date_popup',
       'weight' => 3,
     ),
+  );
+
+  // Exported field_instance: 'node-event-field_event_external_link'
+  $field_instances['node-event-field_event_external_link'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Flexible link field for linking to an external information source or registration service. ',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_external_link',
+    'label' => 'Event External Link',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 4,
+    ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-event-field_location'
@@ -314,7 +369,7 @@ function imagex_events_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 12,
+      'weight' => 10,
     ),
   );
 
@@ -354,7 +409,7 @@ function imagex_events_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 14,
+      'weight' => 12,
     ),
   );
 
@@ -363,7 +418,9 @@ function imagex_events_field_default_field_instances() {
   t('Address');
   t('Date');
   t('Description');
+  t('Event External Link');
   t('Event Logo');
+  t('Flexible link field for linking to an external information source or registration service. ');
   t('Location');
   t('Maximum number of attendees');
   t('Tags');
