@@ -65,7 +65,7 @@ function imagex_events_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -181,6 +181,61 @@ function imagex_events_field_default_field_instances() {
       'type' => 'date_popup',
       'weight' => 3,
     ),
+  );
+
+  // Exported field_instance: 'node-event-field_event_external_link'
+  $field_instances['node-event-field_event_external_link'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Flexible link field for linking to an external information source or registration service. ',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_external_link',
+    'label' => 'Event External Link',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 4,
+    ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-event-field_location'
@@ -314,163 +369,7 @@ function imagex_events_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance: 'node-event-field_offsite_url'
-  $field_instances['node-event-field_offsite_url'] = array(
-    'bundle' => 'event',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 12,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_offsite_url',
-    'label' => 'URL',
-    'required' => 0,
-    'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'plain_text' => 'plain_text',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-          ),
-        ),
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-event-field_registration'
-  $field_instances['node-event-field_registration'] = array(
-    'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'registration_type' => '',
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'registration',
-        'settings' => array(
-          'label' => ' ',
-        ),
-        'type' => 'registration_default',
-        'weight' => 7,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_registration',
-    'label' => 'Registration',
-    'required' => 0,
-    'settings' => array(
-      'default_registration_settings' => array(
-        'capacity' => 0,
-        'reminder' => array(
-          'reminder_settings' => array(
-            'reminder_date' => '',
-            'reminder_template' => '',
-          ),
-          'send_reminder' => 0,
-        ),
-        'scheduling' => array(
-          'close' => '',
-          'open' => '',
-        ),
-        'settings' => array(
-          'from_address' => 'emma.irwin@gmail.com',
-          'maximum_spaces' => 1,
-          'multiple_registrations' => 0,
-        ),
-        'status' => 0,
-      ),
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'registration',
-      'settings' => array(),
-      'type' => 'registration_select',
       'weight' => 10,
-    ),
-  );
-
-  // Exported field_instance: 'node-event-field_registration_type'
-  $field_instances['node-event-field_registration_type'] = array(
-    'bundle' => 'event',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 8,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_registration_type',
-    'label' => 'Registration type',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 0,
-      ),
-      'type' => 'options_select',
-      'weight' => 11,
     ),
   );
 
@@ -510,7 +409,7 @@ function imagex_events_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 14,
+      'weight' => 12,
     ),
   );
 
@@ -519,13 +418,12 @@ function imagex_events_field_default_field_instances() {
   t('Address');
   t('Date');
   t('Description');
+  t('Event External Link');
   t('Event Logo');
+  t('Flexible link field for linking to an external information source or registration service. ');
   t('Location');
   t('Maximum number of attendees');
-  t('Registration');
-  t('Registration type');
   t('Tags');
-  t('URL');
 
   return $field_instances;
 }
