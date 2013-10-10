@@ -1,5 +1,5 @@
 name = Event Permissions
-description =  Permissions for Events content type.
+description =  Base Permissions for Event Content Type.
 core = 7.x
 package = ImageX
 version = 7.x-1.0
