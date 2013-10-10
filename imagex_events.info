@@ -1,4 +1,4 @@
-name = ImageX Events
+name = Events
 description = Enables the capabilities for building an Event.
 core = 7.x
 package = ImageX

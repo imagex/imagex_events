@@ -1,5 +1,5 @@
 name = Event Workflow
-description = Workbench and Scheduler settings for Events
+description = Workbench and Scheduler settings for Events.
 core = 7.x
 package = ImageX
 version = 7.x-1.0

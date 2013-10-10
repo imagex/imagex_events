@@ -1,5 +1,5 @@
-name = ImageX Events - Add This
-description = Submodule of Addthis social media field for Events
+name = Events - Add This
+description = Submodule of Addthis social media field for Events.
 core = 7.x
 package = ImageX
 version = 7.x-1.0

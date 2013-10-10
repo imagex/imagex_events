@@ -1,5 +1,5 @@
 name = Event Permissions
-description = Workbench and Scheduler settings for Events
+description =  Permissions for Events content type.
 core = 7.x
 package = ImageX
 version = 7.x-1.0
