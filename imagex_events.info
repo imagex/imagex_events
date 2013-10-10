@@ -12,7 +12,6 @@ dependencies[] = features
 dependencies[] = file
 dependencies[] = image
 dependencies[] = imagex_common_fields
-dependencies[] = imagex_user_roles_permissions
 dependencies[] = imagex_vocabulary_tags
 dependencies[] = list
 dependencies[] = number
