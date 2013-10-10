@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Event Workflow feature.
+ */
+
+include_once 'imagex_events_workflow.features.inc';

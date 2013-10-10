@@ -1,0 +1,14 @@
+name = Event Permissions
+description = Workbench and Scheduler settings for Events
+core = 7.x
+package = ImageX
+version = 7.x-1.0
+project = imagex_events_permissions
+dependencies[] = features
+dependencies[] = node
+features[features_api][] = api:2
+features[user_permission][] = create event content
+features[user_permission][] = delete any event content
+features[user_permission][] = delete own event content
+features[user_permission][] = edit any event content
+features[user_permission][] = edit own event content
