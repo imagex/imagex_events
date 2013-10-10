@@ -5,6 +5,7 @@ package = ImageX
 version = 7.x-1.0
 project = imagex_events_addthis
 dependencies[] = addthis
+dependencies[] = imagex_events
 dependencies[] = features
 dependencies[] = imagex_addthis
 features[features_api][] = api:1
