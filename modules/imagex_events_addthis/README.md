@@ -1,16 +1,16 @@
 ## Events AddThis
 
-Social Media for 'Events' Content Type
+This extension module of the Page component integrates [AddThis](http://github.com/imagex/imagex_addthis) Social Media sharing, and its default configuration for Event content. 
 
-## Fields
+### Fields
 
 * AddThis
 
-## Dependencies
+### Dependencies
 
 * Contrib: [Features] (https://drupal.org/project/features)  (>= 2.0)
-* Feature: [Addthis] (https://github.com/imagex/imagex_addthis) 
-* Feature: [Events] (https://github.com/imagex/imagex_events) 
+* ImageX Component: [Addthis] (https://github.com/imagex/imagex_addthis) (>=7.x-dev)
+* ImageX Component: [Events] (https://github.com/imagex/imagex_events) (>=7.x-dev)
 
 ## License
 

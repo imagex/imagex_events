@@ -2,16 +2,16 @@
 
 Provides registration for 'Event' content types.
 
-## Fields
+### Fields
 
 * Registration
 * Registration Type
 
-## Dependencies
+### Dependencies
 
 * Contrib: [Features] (https://drupal.org/project/features)  (>= 2.0)
 * Contrib: [Registration] (https://drupal.org/project/features) (>= 1.2)
-* Feature: [Events] (https://github.com/imagex/imagex_events) 
+* ImageX Component: [Events] (https://github.com/imagex/imagex_events) (>= 7.x-dev)
 
 ## License 
 

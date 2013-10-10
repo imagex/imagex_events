@@ -1,8 +1,8 @@
 ## Events
 
-Base definition for 'Event' content type.
+This component enables content management of the standard Event content and its layout. The default layout is configurable using panelizer.
 
-## Fields
+### Fields
 
 * Event title
 * Description
@@ -19,22 +19,23 @@ Base definition for 'Event' content type.
 * Meta tags
 * File attachment
 
-## Dependencies
+### Dependencies
 
 * Contrib: [Address Field] (https://drupal.org/project/addressfield) (4.0-alpha2)
 * Contrib: [Features] (https://drupal.org/project/features) (>= 2.0)
 * Contrib: [Ctools] (https://drupal.org/project/ctools) (>= 1.3) 
 * Contrib: [Panelizer] (https://drupal.org/project/panelizer) (>= 3.1)
 * Contrib: [StrongArm] (https://drupal.org/project/strongarm) (>= 2.0)
-* Feature: [Common Fields] (https://github.com/imagex/imagex_common_fields)
-* Feature: [Vocabulary Tags] (https://github.com/imagex/imagex_vocabulary_tags)
+* ImageX Component: [Common Fields] (https://github.com/imagex/imagex_common_fields) (7.x-dev)
+* ImageX Component: [Vocabulary Tags] (https://github.com/imagex/imagex_vocabulary_tags) (7.x-dev)
 
-## Extension Modules
+### Extension Modules
 
-* **imagex_events_addthis*: Adds addthis field for social media to Event content type.
-* **imagex_events_permissions: Applies permissions for Event content type.
+* **imagex_events_addthis*: This extension module of the Events component integrates [AddThis](http://github.com/imagex/imagex_addthis) Social Media sharing, and its default configuration for FAQ content. 
+* **imagex_events_permissions: This extension module of the Events component provides default permissions for ImageX’s [User Roles](http://github.com/imagex/imagex_user_roles). These permissions meet the  requirements to be used in conjunction with the ImageX [Workflow](http://github.com/imagex/imagex_workflow).
 * **imagex_events_registration: Adds Registration fields for Event content type.
-* **imagex_events_workflow: Adds workbench and strongarm settings for Event content type.
+* **imagex_events_workflow: This extension module integrates with the ImageX [Workflow](http://github.com/imagex/imagex_workflow) component to provide a default publishing and scheduling workflow for Event content.
+
 
 ## License
 

@@ -1,5 +1,5 @@
 name = Events
-description = Enables the capabilities for building an Event.
+description = This component enables content management of the standard Events content and its layout. The default layout is configurable using panelizer.
 core = 7.x
 package = ImageX
 version = 7.x-1.0-dev
