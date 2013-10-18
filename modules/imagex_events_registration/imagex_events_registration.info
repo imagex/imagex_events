@@ -1,5 +1,5 @@
-name = ImageX Events Registration
-description = Allow registration to events
+name = Events Registration
+description = Provides 'Registration' for Events.
 core = 7.x
 package = ImageX
 version = 7.x-1.0-dev
