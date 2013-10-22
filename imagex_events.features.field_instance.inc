@@ -243,7 +243,7 @@ function imagex_events_field_default_field_instances() {
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This is the "short" location used to help users filter events quickly.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -262,7 +262,7 @@ function imagex_events_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_location',
     'label' => 'Location',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -273,8 +273,9 @@ function imagex_events_field_default_field_instances() {
         'apply_chosen' => 0,
       ),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 8,
     ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-event-field_logo'
@@ -373,8 +374,56 @@ function imagex_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_tag'
-  $field_instances['node-event-field_tag'] = array(
+  // Exported field_instance: 'node-event-field_radioactivity'
+  $field_instances['node-event-field_radioactivity'] = array(
+    'bundle' => 'event',
+    'default_value' => array(
+      0 => array(
+        'radioactivity_energy' => 0,
+        'radioactivity_timestamp' => 1382470282,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'radioactivity',
+        'settings' => array(
+          'accuracy' => 100,
+          'energy' => 10,
+          'type' => 'none',
+        ),
+        'type' => 'radioactivity_combo_formatter',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_radioactivity',
+    'label' => 'field_radioactivity',
+    'required' => FALSE,
+    'settings' => array(
+      'profile' => 'medium_traffic',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'radioactivity',
+      'settings' => array(),
+      'type' => 'radioactivity_basic_widget',
+      'weight' => 36,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-event-field_tags'
+  $field_instances['node-event-field_tags'] = array(
     'bundle' => 'event',
     'default_value' => NULL,
     'deleted' => 0,
@@ -385,7 +434,7 @@ function imagex_events_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 10,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -395,7 +444,7 @@ function imagex_events_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_tag',
+    'field_name' => 'field_tags',
     'label' => 'Tags',
     'required' => 0,
     'settings' => array(
@@ -409,8 +458,9 @@ function imagex_events_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 12,
+      'weight' => 34,
     ),
+    'workbench_access_field' => 0,
   );
 
   // Translatables
@@ -424,6 +474,8 @@ function imagex_events_field_default_field_instances() {
   t('Location');
   t('Maximum number of attendees');
   t('Tags');
+  t('This is the "short" location used to help users filter events quickly.');
+  t('field_radioactivity');
 
   return $field_instances;
 }

@@ -96,6 +96,9 @@ function imagex_events_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_location',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
@@ -105,7 +108,11 @@ function imagex_events_field_default_field_bases() {
     'locked' => 0,
     'module' => 'list',
     'settings' => array(
-      'allowed_values' => array(),
+      'allowed_values' => array(
+        0 => 'Asia',
+        1 => 'Europe',
+        2 => 'North America',
+      ),
       'allowed_values_function' => '',
     ),
     'translatable' => 0,
