@@ -77,12 +77,6 @@ function imagex_events_views_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Events pane', 'panel_pane_news');
   $handler->display->display_options['display_description'] = 'Main news pane view.';
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  /* Footer: Global: Text area */
-  $handler->display->display_options['footer']['area']['id'] = 'area';
-  $handler->display->display_options['footer']['area']['table'] = 'views';
-  $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="http://www.pointloma.edu/calendar">All Events</a>';
-  $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
