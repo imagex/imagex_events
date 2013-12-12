@@ -4,6 +4,7 @@ core = 7.x
 package = ImageX
 version = 7.x-1.0
 project = imagex_events_views
+dependencies[] = imagex_events
 dependencies[] = views
 dependencies[] = views_content
 features[ctools][] = views:views_default:3.0
