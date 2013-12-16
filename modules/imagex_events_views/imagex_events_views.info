@@ -1,0 +1,13 @@
+name = Event Views
+description = Views associated with Imagex Events.
+core = 7.x
+package = ImageX
+version = 7.x-1.0
+project = imagex_events_views
+dependencies[] = imagex_events
+dependencies[] = views
+dependencies[] = views_content
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = events
+features_exclude[dependencies][ctools] = ctools
