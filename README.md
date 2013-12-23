@@ -31,7 +31,6 @@ This component enables content management of the standard Event content and its 
 
 ### Extension Modules
 
-* **imagex_events_addthis*: This extension module of the Events component integrates [AddThis](http://github.com/imagex/imagex_addthis) Social Media sharing, and its default configuration for FAQ content. 
 * **imagex_events_permissions: This extension module of the Events component provides default permissions for ImageX’s [User Roles](http://github.com/imagex/imagex_user_roles). These permissions meet the  requirements to be used in conjunction with the ImageX [Workflow](http://github.com/imagex/imagex_workflow).
 * **imagex_events_registration: Adds Registration fields for Event content type.
 * **imagex_events_workflow: This extension module integrates with the ImageX [Workflow](http://github.com/imagex/imagex_workflow) component to provide a default publishing and scheduling workflow for Event content.
