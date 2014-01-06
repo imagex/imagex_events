@@ -24,7 +24,7 @@ function imagex_events_node_info() {
     'event' => array(
       'name' => t('Event'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Use <em>event</em> to create and share an upcoming conference, training event or special event.'),
       'has_title' => '1',
       'title_label' => t('Event Title'),
       'help' => '',
