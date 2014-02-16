@@ -165,13 +165,13 @@ function imagex_events_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'field_tag'
-  $field_bases['field_tag'] = array(
+  // Exported field_base: 'field_tags'
+  $field_bases['field_tags'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_tag',
+    'field_name' => 'field_tags',
     'foreign keys' => array(
       'tid' => array(
         'columns' => array(
