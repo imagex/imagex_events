@@ -112,6 +112,8 @@ function imagex_events_field_default_field_bases() {
         0 => 'Asia',
         1 => 'Europe',
         2 => 'North America',
+        3 => 'South America',
+        4 => 'Australia',
       ),
       'allowed_values_function' => '',
     ),
