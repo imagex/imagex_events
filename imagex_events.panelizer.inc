@@ -224,7 +224,7 @@ function imagex_events_panelizer_defaults() {
     $pane->pid = 'new-8';
     $pane->panel = 'center';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_tag';
+    $pane->subtype = 'node:field_tags';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
