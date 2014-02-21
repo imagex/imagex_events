@@ -13,7 +13,6 @@ dependencies[] = file
 dependencies[] = image
 dependencies[] = imagex_common_fields
 dependencies[] = imagex_vocabulary_tags
-dependencies[] = imagex_vocabulary_tags_field
 dependencies[] = list
 dependencies[] = number
 dependencies[] = options
