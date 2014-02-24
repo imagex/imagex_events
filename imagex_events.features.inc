@@ -17,6 +17,24 @@ function imagex_events_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_field_default_field_bases_alter().
+ */
+function imagex_events_field_default_field_bases_alter(&$data) {
+  if (isset($data['field_event_date'])) {
+    $data['field_event_date']['settings']['entity_translation_sync'] = FALSE; /* WAS: '' */
+  }
+}
+
+/**
+ * Implements hook_field_default_field_instances_alter().
+ */
+function imagex_events_field_default_field_instances_alter(&$data) {
+  if (isset($data['node-event-field_event_date'])) {
+    $data['node-event-field_event_date']['settings']['entity_translation_sync'] = FALSE; /* WAS: '' */
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function imagex_events_node_info() {
@@ -30,5 +48,8 @@ function imagex_events_node_info() {
       'help' => '',
     ),
   );
+
+  features_alter_code('node', $items);
+
   return $items;
 }
