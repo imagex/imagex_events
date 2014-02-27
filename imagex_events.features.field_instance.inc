@@ -159,7 +159,7 @@ function imagex_events_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_date',
     'label' => 'Date',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
@@ -168,9 +168,9 @@ function imagex_events_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'date',
       'settings' => array(
-        'display_all_day' => 0,
         'increment' => 15,
         'input_format' => 'm/d/Y - H:i:s',
         'input_format_custom' => '',
@@ -181,6 +181,7 @@ function imagex_events_field_default_field_instances() {
       'type' => 'date_popup',
       'weight' => 3,
     ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-event-field_event_external_link'
@@ -318,12 +319,20 @@ function imagex_events_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'media',
       'settings' => array(
+        'allowed_schemes' => array(
+          0 => 'private',
+          1 => 'public',
+        ),
+        'allowed_types' => array(
+          0 => 'image',
+        ),
+        'browser_plugins' => array(),
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'media_generic',
       'weight' => 9,
     ),
   );
@@ -372,54 +381,6 @@ function imagex_events_field_default_field_instances() {
       'type' => 'number',
       'weight' => 10,
     ),
-  );
-
-  // Exported field_instance: 'node-event-field_radioactivity'
-  $field_instances['node-event-field_radioactivity'] = array(
-    'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'radioactivity_energy' => 0,
-        'radioactivity_timestamp' => 1382470282,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'radioactivity',
-        'settings' => array(
-          'accuracy' => 100,
-          'energy' => 10,
-          'type' => 'none',
-        ),
-        'type' => 'radioactivity_combo_formatter',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_radioactivity',
-    'label' => 'field_radioactivity',
-    'required' => FALSE,
-    'settings' => array(
-      'profile' => 'medium_traffic',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'radioactivity',
-      'settings' => array(),
-      'type' => 'radioactivity_basic_widget',
-      'weight' => 36,
-    ),
-    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-event-field_tags'
@@ -475,7 +436,8 @@ function imagex_events_field_default_field_instances() {
   t('Maximum number of attendees');
   t('Tags');
   t('This is the "short" location used to help users filter events quickly.');
-  t('field_radioactivity');
+
+  features_alter_code('field_instance', $field_instances);
 
   return $field_instances;
 }
