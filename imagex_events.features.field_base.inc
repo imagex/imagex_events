@@ -42,14 +42,14 @@ function imagex_events_field_default_field_bases() {
       'cache_enabled' => 0,
       'granularity' => array(
         'day' => 'day',
-        'hour' => 0,
-        'minute' => 0,
+        'hour' => 'hour',
+        'minute' => 'minute',
         'month' => 'month',
         'second' => 0,
         'year' => 'year',
       ),
       'timezone_db' => '',
-      'todate' => '',
+      'todate' => 'optional',
       'tz_handling' => 'none',
     ),
     'translatable' => 0,
@@ -167,39 +167,7 @@ function imagex_events_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'field_tags'
-  $field_bases['field_tags'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_tags',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'tags',
-          'parent' => 0,
-        ),
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
-  );
+  features_alter_code('field_base', $field_bases);
 
   return $field_bases;
 }
