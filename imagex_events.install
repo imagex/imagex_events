@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function imagex_events_install() {
+  if ($instance = field_info_instance('node', 'field_date', 'event')) {
+    field_delete_instance($instance);
+  }
+}
