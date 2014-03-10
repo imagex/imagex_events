@@ -26,13 +26,13 @@ function imagex_events_field_default_field_bases() {
     'type' => 'addressfield',
   );
 
-  // Exported field_base: 'field_date'
-  $field_bases['field_date'] = array(
+  // Exported field_base: 'field_event_date'
+  $field_bases['field_event_date'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_date',
+    'field_name' => 'field_event_date',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
