@@ -163,8 +163,8 @@ function imagex_events_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-event-field_date'
-  $field_instances['node-event-field_date'] = array(
+  // Exported field_instance: 'node-event-field_event_date'
+  $field_instances['node-event-field_event_date'] = array(
     'bundle' => 'event',
     'deleted' => 0,
     'description' => '',
@@ -190,7 +190,7 @@ function imagex_events_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_date',
+    'field_name' => 'field_event_date',
     'label' => 'Date',
     'required' => 0,
     'settings' => array(

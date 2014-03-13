@@ -137,7 +137,7 @@ function imagex_events_panelizer_defaults() {
     $pane->pid = 'new-6894e98a-349f-42b3-9287-62154663fae0';
     $pane->panel = 'one_fw_main';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_date';
+    $pane->subtype = 'node:field_event_date';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
