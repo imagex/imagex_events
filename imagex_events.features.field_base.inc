@@ -201,5 +201,7 @@ function imagex_events_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  features_alter_code('field_base', $field_bases);
+
   return $field_bases;
 }
